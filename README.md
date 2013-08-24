@@ -1,4 +1,5 @@
 TinyMCE Etherpad-lite Plug-in
+=============================
 
 Button to insert a textpad of etherpad-lite into TinyMCE
 
@@ -29,19 +30,17 @@ The height of the pad that will be inserted
 Simple usage example
 ================
 
-<script type="text/javascript">
-	tinyMCE.init({
-		mode : "textareas",
-		theme : "advanced",
-		plugins : "etherpadlite",
-		theme_advanced_buttons2 : "bold,italic,underline,strikethrough,separator,bullist,numlist,separator,justifyleft,justifycenter,justifyright,justifyfull,separator,link,unlink,image,table,etherpadlite,separator,cleanup",
-		content_css : "css/content.css",
+tinyMCE.init({
+	mode : "textareas",
+	theme : "advanced",
+	plugins : "etherpadlite",
+	theme_advanced_buttons2 : "bold,italic,underline,strikethrough,separator,bullist,numlist,separator,justifyleft,justifycenter,justifyright,justifyfull,separator,link,unlink,image,table,etherpadlite,separator,cleanup",
+	content_css : "css/content.css",
 
-		// Parameters for etherpadlite Plugin:
-		plugin_etherpadlite_padServerUrl: "http://pad.textb.org/p/", 
-		plugin_etherpadlite_padNamesPrefix : "mypads-", 
-	});
-</script>
+	// Parameters for etherpadlite Plugin:
+	plugin_etherpadlite_padServerUrl: "http://pad.textb.org/p/", 
+	plugin_etherpadlite_padNamesPrefix : "mypads-", 
+});
 
 
 NOTE
