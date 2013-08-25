@@ -5,7 +5,7 @@
  * @package    etherpadlite
  * @link http://cirandas.net/dtygel
  * EtherPad plugin for TinyMCE
- * GPL 3 LICENCES
+ * AFFERO LICENCES
  */
 
 (function() {
