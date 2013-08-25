@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>{#etherpadlite_dlg.title}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+  <script type="text/javascript" src="js/dialog.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/etherpadlite.css" />
+</head>
+<body>
+<div class="ep_logo_contener">
+	<img src="img/etherpadlite-128.png" width="128" height="128" alt="Youtube" />
+</div>
+<div class="epinstr">
+	<p>{#etherpadlite_dlg.instr}</p>
+</div>
+<form onsubmit="EtherPadLiteDialog.insert();return false;" action="#">
+ <div class="mceActionPanel">
+ <table>
+ <tr>
+ 	<td><strong>{#etherpadlite_dlg.epID}</strong></td>
+ </tr>
+ <tr>
+ 	<td><input id="etherpadliteID" name="etherpadliteID" type="text" class="text" size="40" value="" /></td>
+ </tr>
+ <tr>
+ 	<td>
+ 		<strong>{#etherpadlite_dlg.epW}</strong> <input id="etherpadliteWidth" name="etherpadliteWidth" type="text" class="text" size="3" value="500" />&nbsp;
+ 		<strong>{#etherpadlite_dlg.epH}</strong> <input id="etherpadliteHeight" name="etherpadliteHeight" type="text" class="text" size="3" value="400" />
+ 	</td>
+</tr>
+ </table>
+ <table>
+ <tr>
+  	<td>
+  		<table class="etherpadlite-table-child">
+  			<tr>
+  				<td><strong>{#etherpadlite_dlg.chat}</strong></td>
+			 	<td><strong>{#etherpadlite_dlg.alwaysChat}</strong></td>
+			 </tr>
+			 <tr>
+			 	<td>
+					<select name="epChat" id="epChat" style="width: 80px;">
+					  <option value="0">{#etherpadlite_dlg.no}</option>
+					  <option value="1" selected="selected">{#etherpadlite_dlg.yes}</option>
+					</select>
+				</td>
+				<td>
+					<select name="epAlwaysChat" id="epAlwaysChat" style="width: 80px;">
+						<option value="0">{#etherpadlite_dlg.no}</option>
+						<option value="1" selected="selected">{#etherpadlite_dlg.yes}</option>
+					</select>
+				</td>
+			 </tr>
+  		</table>
+  	</td>
+ </tr>
+ </table>
+  </div>
+  <div class="mceActionPanel">
+    <div style="float:left;padding-top:5px">
+      <input type="button" id="insert" name="insert" value="{#insert}" onclick="EtherPadLiteDialog.insert();" />&nbsp;
+      <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+    </div>
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,3 @@
+tinyMCE.addI18n('pt.etherpadlite',{
+	desc : 'Inserir um editor de texto colaborativo'
+});
