@@ -60,7 +60,7 @@
 				longname : 'Insert a collaborative text with Etherpad Lite',
 				author : 'Daniel Tygel',
 				authorurl : 'http://cirandas.net/dtygel',
-				infourl : 'no url yet',
+				infourl : 'https://github.com/dtygel/tinymce-etherpadlite-embed',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}
