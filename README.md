@@ -24,7 +24,7 @@ The prefix that will be added automatically to the pad that will be created. It'
 * plugin_etherpadlite_padWidth (Default: 100%)
 The width of the pad that will be inserted
 
-* plugin_etherpadlite_padWidth (Default: 400px)
+* plugin_etherpadlite_padHeight (Default: 400px)
 The height of the pad that will be inserted
 
 Simple usage example
@@ -36,6 +36,7 @@ tinyMCE.init({
 	plugins : "etherpadlite",
 	theme_advanced_buttons2 : "bold,italic,underline,strikethrough,separator,bullist,numlist,separator,justifyleft,justifycenter,justifyright,justifyfull,separator,link,unlink,image,table,etherpadlite,separator,cleanup",
 	content_css : "css/content.css",
+
 	// Parameters for etherpadlite Plugin:
 	plugin_etherpadlite_padServerUrl: "http://pad.textb.org/p/", 
 	plugin_etherpadlite_padNamesPrefix : "mypads-", 
