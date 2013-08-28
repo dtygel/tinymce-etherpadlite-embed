@@ -1,11 +1,11 @@
 /**
  * Etherpad Lite plug-in for TinyMCE version 3.x
  * @author     Daniel Tygel
- * @version    $Rev: 2 $
+ * @version    $Rev: 1.0 $
  * @package    etherpadlite
- * @link http://cirandas.net/dtygel
+ * @link https://github.com/dtygel/tinymce-etherpadlite-embed
  * EtherPad plugin for TinyMCE
- * AFFERO LICENCES
+ * AFFERO LICENSE
  */
 
 (function() {
@@ -16,7 +16,7 @@
 
 			t.editor = ed;
 			
-			//If the person who activated the plugin didn't put a Pad Server URL, the plugin won't work!
+			//If the person who activated the plugin didn't put a Pad Server URL, the plugin will be disabled
 			if (!ed.getParam("plugin_etherpadlite_padServerUrl")) {
 				alert(etherpadlite.error);
 				return null;
