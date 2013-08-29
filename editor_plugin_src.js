@@ -44,10 +44,9 @@
 		    	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 		    	    	var padName = xmlhttp.responseText;
 						var iframe = "<iframe name='embed_readwrite' src='" + padUrl + padName + "?showControls=true&showChat=true&&alwaysShowChat=true&lang=pt&showLineNumbers=true&useMonospaceFont=false' width='" + padWidth + "' height='" + padHeight + "'></iframe>";
-
 						ed.execCommand('mceInsertContent', false, iframe);
 		    	    }
-			    }
+			    };
 			    xmlhttp.open("GET", url+"/etherpad_name_generator.php?padPrefix="+padPrefix, true);
     			xmlhttp.send();
 			});
